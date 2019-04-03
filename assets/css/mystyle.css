@@ -7,3 +7,22 @@
 	border-radius: 50%;
 	max-width: 220px;
 }
+.nav.nav a{
+	text-align: center;
+}
+.cust-lnk{
+	color: darkgreen;
+}
+.cust-lnk:focus, .cust-lnk:hover, .cust-lnk:active{
+	color: darkolivegreen ; 
+}
+@media (max-width:991px){
+	div.row.text-center div:last-child{
+		margin-top: 1rem;
+	}
+}
+@media (max-width:767px){
+	div.row.text-center div:not(:first-child){
+		margin-top: 1rem;
+	}
+}
