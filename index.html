@@ -6,7 +6,7 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
 	<!-- js -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
@@ -34,21 +34,27 @@
 	</nav>
 </div>
 <div class="container mb-5">
-	<div class="row text-center">
+	<div class="row">
 		<div class="col-lg-4 col-md-6 col-sm-12" href="#">
-			<a href="#" class="cust-lnk"><i class="far fa-envelope fa-2x"></i>
-				<span class="d-none">iswan1s71@gmail.com</span></a>
+			<div class="slideleft">
+				<a href="#" class="cust-lnk"><i class="far fa-envelope fa-2x"></i>
+					<span class="d-none">iswan1s71@gmail.com</span></a>
+			</div>
 		</div>
 		<div class="col-lg-4 col-md-6 col-sm-12" href="#">
-			<a href="#" class="cust-lnk"><i class="fab fa-whatsapp fa-2x"></i>
-				<span class="d-none">+6287823789248</span></a>
+			<div class="slideleft">
+				<a href="#" class="cust-lnk"><i class="fab fa-whatsapp fa-2x"></i>
+					<span class="d-none">+6287823789248</span></a>
+			</div>
 		</div>
 		<div class="col-lg-4 col-md-12 col-sm-12" href="#">
-			<a href="#" class="cust-lnk"><i class="fas fa-phone-square fa-2x"></i>
-				<span class="d-none">+6287823789248</span></a>
+			<div class="slideleft">
+				<a href="#" class="cust-lnk"><i class="fas fa-phone fa-2x smaller"></i>
+					<span class="d-none">+6287823789248</span></a>
+			</div>
 		</div>
 	</div>
-	</div>
+</div>
 <div class="container-fluid position-absolute mt-5">
 	<div class="row fixed-bottom">
 		<div class="col text-center">
@@ -57,4 +63,34 @@
 	</div>
 </div>
 </body>
+<script type="text/javascript">
+$(document).ready(function(){
+	$('.slideleft a').each(function(index){
+		$(this).hover(function(){
+			var envelope = $(this).children('i').hasClass('fa-envelope') ? $(this).children('i').removeClass('fa-envelope').addClass('fa-envelope-open') : '';
+			var whatsapp = $(this).children('i').hasClass('fa-whatsapp') ? $(this).children('i').removeClass('fa-whatsapp').addClass('fa-whatsapp-square') : '';
+			var phone = $(this).children('i').hasClass('fa-phone') ? $(this).children('i').removeClass('fa-phone').addClass('fa-phone-square') : ''; 
+			$(this).parent('.slideleft').addClass('played');
+		}, function(){
+		$(this).parent('.slideleft').children().find('span').fadeIn('slow').removeClass('d-none');
+		});
+	});
+	$('.cust-lnk span').each(function(){
+		$(this).tooltip({
+			placement: 'bottom', title: 'click to copy to clipboard', delay: {'show': 300, 'hide': 300}
+		}).on('click', function(){
+			copyToClipboard($(this));
+			$(this).attr('title', 'copied!').tooltip('_fixTitle').tooltip('show').attr('data-original-title', '').tooltip('_fixTitle');	
+		});
+	});
+});
+
+function copyToClipboard(element) {
+	var $temp = $("<input>");
+	$("body").append($temp);
+	$temp.val($(element).html()).select();
+	document.execCommand("copy");
+	$temp.remove();
+}
+</script>
 </html>

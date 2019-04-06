@@ -16,6 +16,20 @@
 .cust-lnk:focus, .cust-lnk:hover, .cust-lnk:active{
 	color: darkolivegreen ; 
 }
+.far.smaller, .fas.smaller, .fab.smaller, .fa.smaller {
+	font-size: 1.5em !important;
+	margin-top: 5px;
+}
+/*===================================================================== */
+.slideleft{
+	margin-bottom: .5rem;
+	padding-left: 45%;
+	transition: padding-left .6s ease;
+}
+.slideleft.played{
+	padding-left: 5%;
+}
+/*===================================================================== */
 @media (max-width:991px){
 	div.row.text-center div:last-child{
 		margin-top: 1rem;
