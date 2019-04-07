@@ -1,0 +1,39 @@
+<div class="container">
+    <h5 class="mb-3">Personal information 
+        <i class="fas fa-long-arrow-alt-right float-right smaller" data-target="education"></i>
+    </h5> 
+</div>
+<ul class="list-group">
+    <li class="list-group-item d-flex flex-wrap">
+        <span class="col">Gender</span>
+        <span class="col">Male</span>
+    </li>
+    <li class="list-group-item d-flex flex-wrap">
+        <span class="col">Height</span>
+        <span class="col">163 cm</span>
+    </li>
+    <li class="list-group-item d-flex flex-wrap">
+        <span class="col">Weight</span>
+        <span class="col">61 Kg</span>
+    </li>
+    <li class="list-group-item d-flex flex-wrap">
+        <span class="col">Place of birth</span>
+        <span class="col">Bandung</span>
+    </li>
+    <li class="list-group-item d-flex flex-wrap">
+        <span class="col">Date of birth</span>
+        <span class="col">29 July 1987</span>
+    </li>
+    <li class="list-group-item d-flex flex-wrap">
+        <span class="col">Address</span>
+        <span class="col">Jl. Maleber inpress Gg. M. Mochasim No. 186A, Maleber, Andir, Bandung 40184</span>
+    </li>
+</ul>
+<script>
+var next = $('.fas.float-right');
+next.tooltip({
+    placement: 'bottom', title: 'browse ' + next.attr('data-target'), delay: {'show': 300, 'hide' : 500}
+}).on('click', function(){
+
+});
+</script>

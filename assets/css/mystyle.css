@@ -10,15 +10,23 @@
 .nav.nav a{
 	text-align: center;
 }
-.cust-lnk{
-	color: darkgreen;
-}
-.cust-lnk:focus, .cust-lnk:hover, .cust-lnk:active{
-	color: darkolivegreen ; 
-}
+
 .far.smaller, .fas.smaller, .fab.smaller, .fa.smaller {
 	font-size: 1.5em !important;
 	margin-top: 5px;
+	cursor: pointer;
+}
+.row + .row {
+	margin-top: 1rem;
+}
+#personal-information span:first-child {
+	font-weight: 500;
+}
+#personal-information span:last-child {
+	color: #666;
+}
+#personal-information li:hover {
+	background-color: #f9f9f9;
 }
 /*===================================================================== */
 .slideleft{
@@ -30,6 +38,12 @@
 	padding-left: 5%;
 }
 /*===================================================================== */
+
+@media (min-width: 992px){
+	.row + .row {
+		margin-top: 2.5rem;
+	}
+}
 @media (max-width:991px){
 	div.row.text-center div:last-child{
 		margin-top: 1rem;
@@ -39,4 +53,90 @@
 	div.row.text-center div:not(:first-child){
 		margin-top: 1rem;
 	}
+	.w-full {
+		padding-bottom: unset !important;
+	}
+	.align-self-start + .align-self-start { margin-top: 3rem;}
+}
+
+#profile-content { display: none; }
+#nav-icons {
+	cursor: pointer;
+}
+#nav-icons .fas, #nav-icons .fab {
+	color: #696969;
+}
+#nav-icons .fas:hover, #nav-icons .fab:hover {
+	color: #17a2b8;
+	font-size: 2rem;
+	position: relative;
+}
+
+/* overriding style */
+.changeable .w-full {
+	width: 100%;
+	align-self: auto;
+	transition: all 2s ease;
+}	
+
+.changeable.activate .w-full, .changeable.activate .col-auto  {
+	flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+	width: auto !important;
+	/*align-self-start */
+	align-self: flex-start!important;
+	transition: all 2s ease;
+}
+
+.changeable.activate #profile-menu {
+	margin-top: unset !important;
+}
+
+.changeable.activate #profile-menu nav {
+	transition: all 2s ease;
+}
+
+.changeable.activate #profile-menu a {
+	color: white;
+	text-align: left;
+}
+
+.changeable.activate #profile-menu a.active {
+	color: #f0e68c;
+}
+
+.changeable.activate .wrapper {
+	padding-top: 3rem !important;
+	flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+	max-width: 100%;
+	align-self: center !important;
+	transition: all 2s ease;
+}
+
+.changeable.activate .cust-lnk{
+	color: white !important;
+}
+.changeable.activate .cust-lnk:focus {
+	color: #f0e68c !important ; 
+}
+
+.carousel-item img {
+	max-height: 260px;
+	overflow: hidden;
+}
+
+.card-img-overlay{
+	background-color: rgba(0, 0, 0, .85);
+}
+.card-img-overlay:hover{
+	cursor: zoom-in;
+	background-color: rgba(0, 0, 0, .5);
+}
+
+h5.mb-3 {
+	color: #696969;
 }
