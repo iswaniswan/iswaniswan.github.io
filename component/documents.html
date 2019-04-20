@@ -1,0 +1,90 @@
+<div class="card-columns">
+    <div class="card" id="ktp">
+      <img src="assets/image/scanned/ktp.jpg" class="card-img-top">
+      <div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center text-white">
+        <h5 class="card-title">KTP</h5>
+        <p class="card-text">kartu tanda penduduk</p>
+      </div>
+    </div>
+
+    <div class="card" id="simc">
+        <img src="assets/image/scanned/simc.jpg" class="card-img-top">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center text-white">
+            <h5 class="card-title">SIM C</h5>
+            <p class="card-text">surat izin mengemudi C</p>
+        </div>
+    </div>
+
+    <div class="card" id="skmata">
+        <img src="assets/image/scanned/sk-mata.jpg" class="card-img-top">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center text-white">
+            <h5 class="card-title">SK Mata</h5>
+            <p class="card-text">Surat keterangan test mata dan tidak buta warna</p>
+        </div>
+    </div>
+
+    <div class="card" id="ijazahdepan">
+        <img src="assets/image/scanned/ijazah-depan.jpg" class="card-img-top">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center text-white">
+            <h5 class="card-title">Ijazah</h5>
+            <p class="card-text">Ijazah tampak depan</p>
+        </div>
+    </div>
+
+    <div class="card" id="ijazahbelakang">
+        <img src="assets/image/scanned/ijazah-belakang.jpg" class="card-img-top">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center text-white">
+            <h5 class="card-title">Ijazah</h5>
+            <p class="card-text">Ijazah tampak belakang</p>
+        </div>
+    </div>
+
+    <div class="card" id="transkrip">
+        <img src="assets/image/scanned/transkrip.jpg" class="card-img-top">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center text-white">
+            <h5 class="card-title">Transkrip</h5>
+            <p class="card-text">Transkirp nilai</p>
+        </div>
+    </div>
+
+    <div class="card" id="verklaring1">
+        <img src="assets/image/scanned/verklaring-otics.jpg" class="card-img-top">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center text-white">
+            <h5 class="card-title">Verklaring</h5>
+            <p class="card-text">Verklaring PT. OTICS Indonesia</p>
+        </div>
+    </div>
+
+    <div class="card" id="verklaring2">
+        <img src="assets/image/scanned/verklaring-go.jpg" class="card-img-top">
+        <div class="card-img-overlay h-100 d-flex flex-column justify-content-center text-center text-white">
+            <h5 class="card-title">Verklaring</h5>
+            <p class="card-text">Verklaring PT. Pendidikan Ganesha Operation</p>
+        </div>
+    </div>
+
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="imagemodal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <button type="button" class="close btn-close text-primary" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <img src="" class="card-img-top">
+        </div>
+    </div>
+</div>
+
+<script>
+var $img = $('#imagemodal').children().find('img');
+$('.card-columns .card').each(function(){
+    $(this).on('click', function(){
+    var imgsrc = $(this).children('img').attr('src');  
+    $('#imagemodal').on('show.bs.modal', function(){
+        $img.attr('src', imgsrc);
+    });
+    $('#imagemodal').modal('show');
+    });
+});
+</script>

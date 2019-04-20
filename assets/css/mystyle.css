@@ -28,6 +28,15 @@
 #personal-information li:hover {
 	background-color: #f9f9f9;
 }
+#accordion-education li.list-group-item{
+	border-left: unset;
+	border-right: unset;
+}
+#accordion-education .btn-link{
+	color: #17a2b8;
+}
+
+  
 /*===================================================================== */
 .slideleft{
 	margin-bottom: .5rem;
@@ -36,6 +45,14 @@
 }
 .slideleft.played{
 	padding-left: 5%;
+}
+.btn-close{
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin: .125rem 1rem;
+	font-size: 4em;
+	color: #17a2b8;
 }
 /*===================================================================== */
 
@@ -48,6 +65,9 @@
 	div.row.text-center div:last-child{
 		margin-top: 1rem;
 	}
+}
+@media (min-width:768px){
+	.changeable.activate .wrapper { margin-right: 5rem !important; }
 }
 @media (max-width:767px){
 	div.row.text-center div:not(:first-child){
@@ -124,6 +144,14 @@
 	color: #f0e68c !important ; 
 }
 
+.maps-lnk {
+	color: white !important;
+}
+
+.maps-lnk:hover{
+	color: #f0e68c !important ; 
+}
+
 .carousel-item img {
 	max-height: 260px;
 	overflow: hidden;
@@ -139,4 +167,65 @@
 
 h5.mb-3 {
 	color: #696969;
+}
+
+.dot {
+	/* 
+	height: 25px !important;
+	width: 25px !important;
+	*/
+	background-color: #f0e68c;
+	border-radius: 50% !important;
+	display: inline-block;
+	margin: .33rem;
+	padding: .33rem;
+	transition: all 1s ease;
+  }
+.dot:hover, .dot.active, .dot:focus{
+	cursor: pointer;
+	background-color: #17a2b8 !important;
+	padding: .66rem;
+    margin: unset;
+	transition: all 1s ease;
+}
+#work-experience{
+	margin:2.5rem 0rem; 
+}
+#work-experience ul li{
+	margin: 0rem .5rem;
+}
+#body-scrollspy ul li.list-group-item{
+	cursor: default;
+	padding-left: unset !important;
+	padding-right: unset !important;
+	border-left: unset;
+	border-right: unset;
+}
+#body-scrollspy ul li.list-group-item:hover{
+	background-color: rgba(240, 230, 140, .1);
+}
+#body-scrollspy ul li:first-child{
+	margin-top: 1.5rem;
+}
+#body-scrollspy ul li:last-child{
+	margin-bottom: 3rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(240, 230, 140, .5); 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #17a2b8;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #999; 
 }
