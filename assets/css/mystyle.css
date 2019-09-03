@@ -1,4 +1,7 @@
 @charset "utf-8";
+body{
+	padding-bottom: 35px !important;
+}
 .body-top {
 	width: 100%;
 	/*background-color: darkgray; */
@@ -34,6 +37,9 @@
 }
 #accordion-education .btn-link{
 	color: #17a2b8;
+}
+.row.fixed-bottom {
+	background-color: white;
 }
 
   
