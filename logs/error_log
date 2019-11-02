@@ -1,0 +1,23 @@
+[Sat Nov 02 07:08:52.397530 2019] [ssl:warn] [pid 3876] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:08:52.397648 2019] [ssl:warn] [pid 3876] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:08:52.457177 2019] [ssl:warn] [pid 3877] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:08:52.457211 2019] [ssl:warn] [pid 3877] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:12:50.765126 2019] [ssl:warn] [pid 4715] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:12:50.765206 2019] [ssl:warn] [pid 4715] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:12:50.820704 2019] [ssl:warn] [pid 4716] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:12:50.820743 2019] [ssl:warn] [pid 4716] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:15:27.517706 2019] [ssl:warn] [pid 5208] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:15:27.517793 2019] [ssl:warn] [pid 5208] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:15:27.568967 2019] [ssl:warn] [pid 5216] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:15:27.569021 2019] [ssl:warn] [pid 5216] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:17:05.729234 2019] [ssl:warn] [pid 5480] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:17:05.729309 2019] [ssl:warn] [pid 5480] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:17:05.791995 2019] [ssl:warn] [pid 5482] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:17:05.792044 2019] [ssl:warn] [pid 5482] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:17:54.523478 2019] [ssl:warn] [pid 5713] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:17:54.523563 2019] [ssl:warn] [pid 5713] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 07:17:54.595675 2019] [ssl:warn] [pid 5714] AH01906: portofolio.lan:13444:0 server certificate is a CA certificate (BasicConstraints: CA == TRUE !?)
+[Sat Nov 02 07:17:54.595728 2019] [ssl:warn] [pid 5714] AH01909: portofolio.lan:13444:0 server certificate does NOT include an ID which matches the server name
+[Sat Nov 02 09:04:24.291289 2019] [core:error] [pid 7019] (13)Permission denied: [client 192.168.88.201:46296] AH00132: file permissions deny server access: /home/iswan/Develop/htdocs/portofolio/assets/image/lastwork/sibep-mobile-1.png, referer: https://192.168.88.201:13446/
+[Sat Nov 02 09:05:54.377047 2019] [core:error] [pid 14152] (13)Permission denied: [client 192.168.88.201:47052] AH00132: file permissions deny server access: /home/iswan/Develop/htdocs/portofolio/assets/image/lastwork/sibep-mobile-1.png, referer: https://192.168.88.201:13446/
+[Sat Nov 02 09:05:57.410953 2019] [core:error] [pid 12686] (13)Permission denied: [client 192.168.88.201:47070] AH00132: file permissions deny server access: /home/iswan/Develop/htdocs/portofolio/assets/image/lastwork/sibep-mobile-1.png, referer: https://192.168.88.201:13446/
