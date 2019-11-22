@@ -41,7 +41,13 @@ body{
 .row.fixed-bottom {
 	background-color: white;
 }
-
+.bb-1{
+	border: 1px solid rgba(0, 0, 0, .1);
+}
+.indent-left{
+	margin-top: 15px;
+	margin-left: 15px;
+}
   
 /*===================================================================== */
 .slideleft{
@@ -215,7 +221,7 @@ h5.mb-3 {
 	margin-top: 1.5rem;
 }
 #body-scrollspy ul li:last-child{
-	margin-bottom: 3rem;
+	margin-bottom: 1.5rem;
 }
 
 ::-webkit-scrollbar {
