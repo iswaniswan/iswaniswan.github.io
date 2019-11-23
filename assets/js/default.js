@@ -28,6 +28,9 @@ $(document).ready(function(){
 		});
 	});
 
+	// note guest
+	visitors();
+
 });
 
 function navJs(){
@@ -81,6 +84,141 @@ function tooltipLocation(){
 			delay: {'show': 300, 'hide': 500}
 		});
 	});
+}
+
+function visitors(){
+	var api_key = '4dca3e0255a186a433fd6880f42c06c90d92525e40e5219c1d693e01';
+	$.get('https://api.ipdata.co/?api-key='+api_key, function(response){
+		var data = buildJson(response);
+		sendFirebase(data);
+	});
+	// console.log(ids);
+	// console.log(data);
+}
+
+var firebaseGuestIds = function(ids){
+	return strToday() + '-' + ids;
+}
+
+function buildJson(data){
+	var asn = data.asn;
+	var time = data.time_zone;
+	var threat = data.threat;
+	var id = strToday() + '-' + data.count;
+	var dData = {
+		"id": id,
+		"country": data.country_name,
+		"region": data.region,
+		"city": data.city,
+		"ip": data.ip,
+		"lat": data.latitude,
+		"lng": data.longitude,
+		"asn":{
+			"asn": asn.asn,
+			"name": asn.name,
+			"domain": asn.domain
+		},
+		"time_zone": {
+			"name": time.name,
+			"abbr": time.abbr,
+			"offset": time.offset,
+			"current_time": time.current_time
+		},
+		"threat": {
+			"is_tor": threat.is_tor,
+			"is_proxy": threat.is_proxy,
+			"is_anonymous": threat.is_anonymous,
+			"is_known_attacker": threat.is_known_attacker,
+			"is_known_abuser": threat.is_known_abuser,
+			"is_threat": threat.is_threat,
+			"is_bogon": threat.is_bogon
+		},
+	}
+	return dData;
+}
+
+function strToday(){
+	var today = new Date();
+	var dd = String(today.getDate()).padStart(2, '0');
+	var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+	var yyyy = today.getFullYear();
+	return yyyy+mm+dd;
+}
+
+var responseExample = {
+    "ip": "114.5.215.36",
+    "is_eu": false,
+    "city": "Jakarta",
+    "region": "Jakarta",
+    "region_code": "JK",
+    "country_name": "Indonesia",
+    "country_code": "ID",
+    "continent_name": "Asia",
+    "continent_code": "AS",
+    "latitude": -6.1741,
+    "longitude": 106.8296,
+    "postal": null,
+    "calling_code": "62",
+    "flag": "https://ipdata.co/flags/id.png",
+    "emoji_flag": "🇮🇩",
+    "emoji_unicode": "U+1F1EE U+1F1E9",
+    "asn": {
+        "asn": "AS4761",
+        "name": "INDOSAT Internet Network Provider",
+        "domain": "indosatooredoo.com",
+        "route": "114.5.215.0/24",
+        "type": "isp"
+    },
+    "languages": [
+        {
+            "name": "Indonesian",
+            "native": "Bahasa Indonesia"
+        }
+    ],
+    "currency": {
+        "name": "Indonesian Rupiah",
+        "code": "IDR",
+        "symbol": "Rp",
+        "native": "Rp",
+        "plural": "Indonesian rupiahs"
+    },
+    "time_zone": {
+        "name": "Asia/Jakarta",
+        "abbr": "WIB",
+        "offset": "+0700",
+        "is_dst": false,
+        "current_time": "2019-11-23T21:29:45.777124+07:00"
+    },
+    "threat": {
+        "is_tor": false,
+        "is_proxy": false,
+        "is_anonymous": false,
+        "is_known_attacker": false,
+        "is_known_abuser": false,
+        "is_threat": false,
+        "is_bogon": false
+    },
+    "count": "12"
+}
+
+var firebaseConfig = {
+	apiKey: "AIzaSyDuQ2vzFemq_6pqpedSjxoUzST4Mn99z18",
+	authDomain: "hello-firebase-6bd12.firebaseapp.com",
+	databaseURL: "https://hello-firebase-6bd12.firebaseio.com",
+	projectId: "hello-firebase-6bd12",
+	storageBucket: "hello-firebase-6bd12.appspot.com",
+	messagingSenderId: "354690179662",
+	appId: "1:354690179662:web:cbfcbed861f73722"
+};
+
+function sendFirebase(data){
+	
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	var db = firebase.database();
+	var path = 'jobstreet/iswaniswan/';
+	db.ref(path).push(data);
+
 }
 
 
