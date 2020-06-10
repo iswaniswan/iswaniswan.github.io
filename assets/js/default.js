@@ -147,7 +147,7 @@ function strToday(){
 
 var firebaseConfig = {
     apiKey: "AIzaSyANwQjj11nADkS0L9B-qjofntGbSfd_duc",
-    authDomain: "iswaniswan-2f476.firebaseapp.com",
+    authDomain: "iswaniswan.github.io",
     databaseURL: "https://iswaniswan-2f476.firebaseio.com",
     projectId: "iswaniswan-2f476",
     storageBucket: "iswaniswan-2f476.appspot.com",
