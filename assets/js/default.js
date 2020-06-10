@@ -145,62 +145,6 @@ function strToday(){
 	return yyyy+mm+dd;
 }
 
-var responseExample = {
-    "ip": "114.5.215.36",
-    "is_eu": false,
-    "city": "Jakarta",
-    "region": "Jakarta",
-    "region_code": "JK",
-    "country_name": "Indonesia",
-    "country_code": "ID",
-    "continent_name": "Asia",
-    "continent_code": "AS",
-    "latitude": -6.1741,
-    "longitude": 106.8296,
-    "postal": null,
-    "calling_code": "62",
-    "flag": "https://ipdata.co/flags/id.png",
-    "emoji_flag": "🇮🇩",
-    "emoji_unicode": "U+1F1EE U+1F1E9",
-    "asn": {
-        "asn": "AS4761",
-        "name": "INDOSAT Internet Network Provider",
-        "domain": "indosatooredoo.com",
-        "route": "114.5.215.0/24",
-        "type": "isp"
-    },
-    "languages": [
-        {
-            "name": "Indonesian",
-            "native": "Bahasa Indonesia"
-        }
-    ],
-    "currency": {
-        "name": "Indonesian Rupiah",
-        "code": "IDR",
-        "symbol": "Rp",
-        "native": "Rp",
-        "plural": "Indonesian rupiahs"
-    },
-    "time_zone": {
-        "name": "Asia/Jakarta",
-        "abbr": "WIB",
-        "offset": "+0700",
-        "is_dst": false,
-        "current_time": "2019-11-23T21:29:45.777124+07:00"
-    },
-    "threat": {
-        "is_tor": false,
-        "is_proxy": false,
-        "is_anonymous": false,
-        "is_known_attacker": false,
-        "is_known_abuser": false,
-        "is_threat": false,
-        "is_bogon": false
-    },
-    "count": "12"
-}
-
 var firebaseConfig = {
 	apiKey: "AIzaSyDuQ2vzFemq_6pqpedSjxoUzST4Mn99z18",
 	authDomain: "hello-firebase-6bd12.firebaseapp.com",
