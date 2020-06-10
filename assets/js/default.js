@@ -146,21 +146,21 @@ function strToday(){
 }
 
 var firebaseConfig = {
-	apiKey: "AIzaSyDuQ2vzFemq_6pqpedSjxoUzST4Mn99z18",
-	authDomain: "hello-firebase-6bd12.firebaseapp.com",
-	databaseURL: "https://hello-firebase-6bd12.firebaseio.com",
-	projectId: "hello-firebase-6bd12",
-	storageBucket: "hello-firebase-6bd12.appspot.com",
-	messagingSenderId: "354690179662",
-	appId: "1:354690179662:web:cbfcbed861f73722"
-};
+    apiKey: "AIzaSyANwQjj11nADkS0L9B-qjofntGbSfd_duc",
+    authDomain: "iswaniswan-2f476.firebaseapp.com",
+    databaseURL: "https://iswaniswan-2f476.firebaseio.com",
+    projectId: "iswaniswan-2f476",
+    storageBucket: "iswaniswan-2f476.appspot.com",
+    messagingSenderId: "27180601677",
+    appId: "1:27180601677:web:96a5728f7fc68c0f076704"
+  };
 
 function sendFirebase(data){
 	
 	// Initialize Firebase
 	firebase.initializeApp(firebaseConfig);
 	var db = firebase.database();
-	var path = 'jobstreet/iswaniswan/';
+	var path = 'visitors/jobstreet/';
 	db.ref(path).push(data);
 
 }
