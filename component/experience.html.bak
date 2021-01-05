@@ -1,0 +1,222 @@
+<div id="sub-experience">
+    <div class="container">
+        <h5 class="mb-3 text-center">Work experience
+            <i class="fas fa-long-arrow-alt-left float-left smaller" data-target="education"></i>
+            <i class="fas fa-long-arrow-alt-right float-right smaller" data-target="documents"></i>
+        </h5>
+    </div>
+    <div class="container">
+        <nav id="work-experience" class="navbar">
+            <ul class="nav nav-pills mx-auto">
+                <!-- baskara -->
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20052006" title="2005" data-placement="top"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20052006" title="2006" data-placement="bottom"></a>
+                </li>
+                <!-- otics -->
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20082009" title="2008" data-placement="top"></a>
+                </li>
+                <!-- niagarakom -->
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20082009" title="2009" data-placement="bottom"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20092010" title="2010" data-placement="top"></a>
+                </li>
+                <!-- ganesha operation -->
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20112017" title="2011" data-placement="bottom"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20112017" title="2017" data-placement="top"></a>
+                </li>
+                <!-- leibel -->
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20182020" title="2018" data-placement="bottom"></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20182020" title="2020" data-placement="top"></a>
+                </li>
+                <!-- cisangkan -->
+                <li class="nav-item">
+                    <a class="nav-link dot" href="#t20202021" title="2021" data-placement="bottom"></a>
+                </li>
+            </ul>
+        </nav>
+        <div data-spy="scroll" data-target="#work-experience" data-offset="0" style="height: 300px; overflow-y: scroll;" id="body-scrollspy" class="bb-1">
+            <h4 id="t20052006" class="indent-left">PT. Sinar Baskara Sejati</h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Address</span>
+                    <span class="col">Jl. Raya Batujajar Kp. Pasir paku</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Business category</span>
+                    <span class="col">Textile</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Position</span>
+                    <span class="col">Operator</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Period</span>
+                    <span class="col">2005 - 2006</span>
+                </li>
+            </ul>
+            <h4 id="t20082009" class="indent-left">PT. OTICS Indonesia</h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Address</span>
+                    <span class="col">EJIP Industrial Park Plot 5C-1 Cikarang selatan, Bekasi</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Business category</span>
+                    <span class="col">Manufacture</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Position</span>
+                    <span class="col">Operator</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Period</span>
+                    <span class="col">2008 - 2009</span>
+                </li>
+            </ul>
+            <h4 id="t20092010" class="indent-left">Niagarakom</h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Address</span>
+                    <span class="col">Jl. Komud. Supadio no.190/72 Bandung</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Business category</span>
+                    <span class="col">Service</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Position</span>
+                    <span class="col">Technician</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Period</span>
+                    <span class="col">2009 - 2010</span>
+                </li>
+            </ul>
+            <h4 id="t20112017" class="indent-left">PT. Pendidikan Ganesha Operation</h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Address</span>
+                    <span class="col">Jl. Abdurrahman salen no. 44 Bandung <i class="small font-italic">(branch)</i></span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Business category</span>
+                    <span class="col">Education</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Position</span>
+                    <span class="col">IT support</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Period</span>
+                    <span class="col">2011 - 2016</span>
+                </li>
+                <hr/>
+                <hr/>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Address</span>
+                    <span class="col">Jl. Purnawarman no.36B Bandung <i class="small font-italic">(head office)</i></span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Business category</span>
+                    <span class="col">Education</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Position</span>
+                    <span class="col">IT Networking</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Period</span>
+                    <span class="col">2016 - 2017</span>
+                </li>
+            </ul>
+            <h4 id="t20182020" class="indent-left">PT. Beton Elemen Persada (Beton Works)</h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Address</span>
+                    <span class="col">JL Raya KM.5 No.18, Giriasih, Kabupaten Bandung Barat</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Business category</span>
+                    <span class="col">Manufacture</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Position</span>
+                    <span class="col">Staff MIS</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Period</span>
+                    <span class="col">2018 - 08/jan/2020 <i class="small font-italic">(completion of contract)</i> </span>
+                </li>
+            </ul>
+            <h4 id="t20202021" class="indent-left">PT. Cisangkan (Beton Works)</h4>
+            <ul class="list-group">
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Address</span>
+                    <span class="col">Jl. H. Alpi No.107, Cibuntu, Kota Bandung</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Business category</span>
+                    <span class="col">Manufacture</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Position</span>
+                    <span class="col">Staff IT</span>
+                </li>
+                <li class="list-group-item d-flex flex-wrap">
+                    <span class="col">Period</span>
+                    <span class="col">2020 - 11/jan/2021 <i class="small font-italic">(completion of contract)</i> </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+
+$(document).ready(function(){
+    /*scrollspy */
+    var offsetHeight = $('#work-experience').outerHeight()*4;
+    $('#body-scrollspy').scrollspy({ target: '#work-experience', offset: offsetHeight });
+    $('#body-scrollspy').each(function () {
+        var $spy = $(this).scrollspy('refresh');
+    });
+
+    var $lia = $('#work-experience li > a');
+    $lia.tooltip('update');
+    $(this).liactive($lia);
+
+    $('#body-scrollspy').on('activate.bs.scrollspy', function(){
+        $(this).liactive($lia);
+    });
+
+});
+
+
+(function($){
+    $.fn.liactive = function($lia){
+        $lia.each(function(){
+            var $actives = $(this).hasClass('active') ? $(this).liTooltipShow($(this)) : $(this).tooltip('hide') ;
+        });
+    };
+
+    $.fn.liTooltipShow = function(e){
+        e.tooltip({
+			delay: {'show': 800}
+        }).tooltip('show');
+        /* khusus 2009 & 2010 */
+        var $actives90 = e.attr('data-original-title') == '2010' || e.attr('title') == '2010' ? $(this).liTooltipShow($('#work-experience > ul > li:nth-child(4) > a')) : '';
+    };
+
+}(jQuery));
+</script>

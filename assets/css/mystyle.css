@@ -91,7 +91,7 @@ body{
 	.align-self-start + .align-self-start { margin-top: 3rem;}
 }
 
-#profile-content { display: none; }
+#profile-content { display: none; padding-top: 3rem !important;}
 #nav-icons {
 	cursor: pointer;
 }
@@ -241,4 +241,130 @@ h5.mb-3 {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: #999; 
+}
+
+
+/* timeline */
+
+.timeline, .loadable{
+	width: 100%;
+	max-width: 800px;
+	background: #fff;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 75px;
+	position: relative;
+	box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+}
+.timeline:before {
+	content: '';
+	position: absolute;
+	top: 0px;
+	left: calc(33% + 15px);
+	bottom: 0px;
+	width: 4px;
+	background: #ddd;
+}
+.timeline:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.entry {
+	clear: both;
+	text-align: left;
+	position: relative;
+}
+.entry .title {
+	margin-bottom: 0.5em;
+	float: left;
+	width: 33%;
+	padding-right: 30px;
+	text-align: right;
+	position: relative;
+}
+.entry .title:before {
+	content: '';
+	position: absolute;
+	width: 8px;
+	height: 8px;
+	border: 4px solid #17a2b8;
+	background-color: #fff;
+	border-radius: 100%;
+	top: 15%;
+	right: -8px;
+	z-index: 99;
+}
+.entry .title h3 {
+	margin: 0;
+	font-size: 120%;
+}
+.entry .title p {
+	margin: 0;
+	font-size: 100%;
+}
+.entry .body {
+	margin: 0 0 3em;
+	float: right;
+	width: 66%;
+	padding-left: 30px;
+}
+.entry .body p {
+	line-height: 1.4em;
+}
+.entry .body p:first-child {
+	margin-top: 0;
+	font-weight: 400;
+}
+.entry .body ul {
+	color: #aaa;
+	padding-left: 0;
+	list-style-type: none;
+}
+.entry .body ul li:before {
+	content: "–";
+	margin-right: 0.5em;
+}
+
+li.list-group-item {
+	border:none !important;
+	padding: .5rem 1.25rem;
+}
+
+/*  */
+.card-title {
+	color: #148c9f !important;
+	border-bottom: 1px solid #17a2b8;
+}
+
+.clear-padding {
+	padding: unset !important;
+}
+
+.row.exp::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: calc(33% + 27px);
+    bottom: 0px;
+    width: 5px;
+    background: rgba(240, 230, 140, .5);
+}
+
+#track > div > div:first-child {
+	padding-top: 15px;
+}
+
+#track > div > div:last-child > div.body {
+	margin-bottom: unset !important;
+}
+
+#track > div > div {	
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+.mb-05 {
+	margin-bottom: 0.5rem !important;
 }
