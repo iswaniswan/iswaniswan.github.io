@@ -1,0 +1,121 @@
+<div class="container mb-5">
+        <div class="col-12">
+            <a class="" data-toggle="collapse" href="#collapseNetworkingSupport" aria-expanded="false" aria-controls="collapseNetworkingSupport">
+                <h5 class="lead">Networking & troubleshooting support</h5>
+            </a>
+            <div class="collapse" id="collapseNetworkingSupport">
+                <div class="row">
+                    <ul class="list-group w-100">
+                        <li class="list-group-item">
+                            <span class="">Instalasi jaringan dan konfigurasi router (mikrotik), akses poin, server (windows server, centos).</span>
+                                <ul class="list-group list-group-flush small text-secondary">
+                                    <li class="list-group-item">
+                                        <span class="">manajemen bandwidth mikrotik, mac-address filtering, konfigurasi firewall, NAT.</span>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <span class="">konfigurasi server untuk aplikasi tracking sales (3rd party).</span>
+                                    </li>
+                                </ul>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="">Pemeliharaan jaringan CCTV, setting remote akses.</span>
+                        </li>
+                        <li class="list-group-item">
+                                <span class="">Instalasi OS (windows/ubuntu) & aplikasi pendukung.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="container mb-5">
+    <div class="col-12">
+        <a class="" data-toggle="collapse" href="#collapseApplicationDevelopment" aria-expanded="false" aria-controls="collapseApplicationDevelopment">
+            <h5 class="lead">Application development</h5>
+        </a>
+        <div class="collapse" id="collapseApplicationDevelopment">
+            <div class="row">
+
+                <div class="card-deck mb-5">
+                    <div class="card">
+                        <img src="assets/image/lastwork/sibep.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title">info.leibel.co.id</h5>
+                            <p class="card-text">Pengembangan aplikasi lokal berbasis web, digunakan sebagai media informasi bersifat publik internal pabrik.</p>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="container">
+                            <picture class="mx-auto">
+                                <img src="assets/image/lastwork/sibep-mobile-1.png"  class="img-fluid img-thumbnail" alt="" style="max-height:168px">
+                                <img src="assets/image/lastwork/sibep-mobile-2.png"  class="img-fluid img-thumbnail" alt="" style="max-height:168px">
+                            </picture>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">info leibel</h5>
+                            <p class="card-text">Aplikasi mobile berbasis android (native) sebagai view untuk web info.leibel.co.id</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="card-deck mb-5">
+                        <div class="card">
+                            <img src="assets/image/lastwork/geoleibel.png" class="card-img-top" alt="">
+                            <div class="card-body">
+                                <h5 class="card-title">Utility web</h5>
+                                <p class="card-text">Digunakan sebagai alat bantu admin sales dalam pemetaan lokasi customer.</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="container">
+                                <picture class="mx-auto">
+                                    <img src="assets/image/lastwork/geoleibel-mobile-1.png"  class="img-fluid img-thumbnail" alt="" style="max-height:168px">
+                                    <img src="assets/image/lastwork/geoleibel-mobile-2.png"  class="img-fluid img-thumbnail" alt="" style="max-height:168px">
+                                </picture>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Utility mobile</h5>
+                                <p class="card-text">Aplikasi mobile berbasis android (native) untuk mendapatkan realtime koordinat saat berada dilokasi customer.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                <ul class="list-group text-secondary small w-100">
+                    <li class="list-group-item">
+                        <span>pengembangan web menggunakan PHP dengan framework Codeigniter, Boostrap (CSS template).</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span>pengembangan aplikasi mobile menggunakan java (android studio)</span>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-hidden="true" id="imagemodal">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <button type="button" class="close btn-close text-primary" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <img src="" class="card-img-top">
+        </div>
+    </div>
+</div>
+
+<script>
+var $img = $('#imagemodal').children().find('img');
+$('.card-columns .card').each(function(){
+    $(this).on('click', function(){
+    var imgsrc = $(this).children('img').attr('src');  
+    $('#imagemodal').on('show.bs.modal', function(){
+        $img.attr('src', imgsrc);
+    });
+    $('#imagemodal').modal('show');
+    });
+});
+</script>
