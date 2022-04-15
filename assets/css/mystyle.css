@@ -184,7 +184,8 @@ body{
 }
 
 .card-img-overlay{
-	background-color: rgba(0, 0, 0, .85);
+	background-color: rgba(0, 0, 0, .75);
+	margin: 1rem;
 }
 .card-img-overlay:hover{
 	cursor: zoom-in;
@@ -373,11 +374,11 @@ li.list-group-item {
 	margin-bottom: unset !important;
 }
 
-#track > div > div {	
-	padding-left: 25px;
-	padding-right: 10px;
-}
-
 .mb-05 {
 	margin-bottom: 0.5rem !important;
+}
+
+.card-document {
+	padding: 1rem;
+	box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
