@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!-- css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="assets/css/mystyle.css">
+	<!-- js -->
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-database.js"></script>
+	<title>portofolio</title>
+</head>
+<body>
+<div class="container-fluid bg-info changeable" id="profile-header">
+	<div class="row justify-content-center">
+		<div class="w-full py-5 pb-3">
+			<img class="img-circle mx-auto d-block" src="assets/image/edit2-small.jpg">
+		</div>
+		<div class="wrapper"></div>
+		<div class="col-auto p-3 text-light" id="profile-name">
+			<h4><span>Iswanto</span></h5>
+		</div>
+	</div>
+</div>
+<div class="container my-5 flex-right-menu" id="profile-menu">
+	<nav class="nav row lead justify-content-between">
+		<a href="#" class="nav-link col-lg-2 col-md-6 col-sm-12" data-target="aboutme">Profile</a>
+		<a href="#" class="nav-link col-lg-2 col-md-6 col-sm-12" data-target="experience">Experience</a>
+		<a href="#" class="nav-link col-lg-2 col-md-6 col-sm-12" data-target="documents">Documents</a>
+		<a href="#" class="nav-link col-lg-2 col-md-6 col-sm-12" data-target="portofolio">portofolio</a>
+	</nav>
+	<div class="row">
+			<div class="col-lg-4 col-md-6 col-sm-12" href="#">
+				<div class="slideleft">
+					<a href="#" class="cust-lnk text-info"><i class="far fa-envelope fa-2x"></i>
+						<div class="">
+							<span class="d-none small">iswan1s71@gmail.com</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12" href="#">
+				<div class="slideleft">
+					<a href="#" class="cust-lnk text-info"><i class="fab fa-whatsapp fa-2x"></i>
+						<div class="">
+							<span class="d-none small">+6287823789248</span>
+						</div>
+					</a>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6 col-sm-12" href="#">
+				<div class="slideleft">
+					<a href="#" class="cust-lnk text-info"><i class="fas fa-phone fa-2x smaller"></i>
+						<div class="">
+							<span class="d-none small">+6287823789248</span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+</div>
+<div class="container-fluid position-absolute mt-5">
+	<div class="row fixed-bottom">
+		<div class="col text-center">
+		</div>
+	</div>
+</div>
+<section id="profile-content">
+	<div class="container">
+		<div class="loadable mx-auto" id="track"></div>
+	</div>
+</section>
+</body>
+<script type="text/javascript" src="assets/js/default.js"></script>
+</html>
