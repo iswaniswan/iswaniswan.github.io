@@ -382,3 +382,9 @@ li.list-group-item {
 	padding: 1rem;
 	box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
 }
+
+.card-title.display-6 {
+	font-size: 2rem !important;
+    font-weight: 300 !important;
+    line-height: 1.2 !important;
+}
