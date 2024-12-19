@@ -25,7 +25,7 @@ body{
     height: 80px;
     top: 0;
     left: 0;
-	background-color: #0ac0e5;
+	background-color: #3db9dc!important;
 }
 .far.smaller, .fas.smaller, .fab.smaller, .fa.smaller {
 	font-size: 1.5em !important;
